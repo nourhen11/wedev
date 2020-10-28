@@ -1,0 +1,36 @@
+.btn-green {
+  color: #fff;
+  background-color: $color-secondary !important;
+  border-color: $color-secondary !important;
+}
+.form-control, .input-group-text, .custom-select{
+  border: 1px solid #34495E !important;
+}
+.form-control.is-valid, .was-validated .form-control:valid{
+  border-color : $color-secondary !important;
+}
+.valid-feedback{
+  color: $color-secondary !important;
+}
+.form-control.is-invalid, .was-validated .form-control:invalid{
+  border-color : $color-danger !important;
+}
+.invalid-feedback{
+  color: $color-danger !important;
+}
+.txt-blue {
+  color: $color-blue;
+}
+.txt-green {
+  color: $color-secondary;
+}
+.txt-red {
+  color: $color-danger;
+}
+.btn-hover:hover {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.border-top {
+  border-top: 3px solid #34495E !important;
+}

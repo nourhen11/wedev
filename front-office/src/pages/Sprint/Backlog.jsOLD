@@ -1,0 +1,24 @@
+import React, {Component} from 'react'
+import Tree from '../../component/Tree';
+import DragnDrop from './DragnDrop'
+
+export default class Backlog extends Component {
+    render() {
+
+        const data = [
+            {title: 'A faire', items: ['1', '2', '3']},
+            {title: 'En cours', items: ['4', '5']},
+            {title: 'Fini', items: ['6', '7']}
+        ];
+        return (
+            <div>
+                <div className="container-fluid">
+                    <Tree label={"Profile"} href={"../pages/Home.js"}/>
+                </div>
+                <header className="App-header">
+                    <DragnDrop data={data}/>
+                </header>
+            </div>
+        )
+    }
+}

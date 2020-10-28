@@ -1,0 +1,22 @@
+.hide-task {
+  display: none;
+}
+#task-content {
+  background: #fff;
+  position: absolute;
+  z-index: 9999;
+  right: -550px;
+  top: 0;
+  border-left: 5px solid $color-primary;
+  width: 550px;
+  height: 100vh;
+}
+.is-open-task-content {
+  -webkit-animation: displayTask 0.5s forwards;
+  -webkit-animation-delay: .2s;
+  animation: displayTask 0.5s forwards;
+  animation-delay: 0.2s;
+}
+@keyframes displayTask {
+  100% { right: 0; }
+}
